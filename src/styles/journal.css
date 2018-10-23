@@ -1,0 +1,39 @@
+fieldset {
+  display:flex;
+  flex-direction:column;
+  
+}
+.dateDiv {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 2px
+}
+
+.conceptsDiv {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 2px
+}
+
+.journalDiv {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 2px
+}
+
+.moodDiv {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 2px
+}
+
+/* A bit of color*/
+body h1 {
+  color: rgb(31, 50, 219);
+  font-family: 'Inconsolata', monospace;
+
+}

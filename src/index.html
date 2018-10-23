@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Daily Journal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Daily Journal</h1>
+  <form action="">
+    <fieldset>
+
+      <div class="dateDiv">
+        <label for="journalDate">Date of entry</label>
+        <input type="date" name="journalDate" id="journalDate" style="width:150px;">
+      </div>
+
+      <div class="conceptsDiv">
+        <label for="conceptsCovered">Concepts covered</label>
+        <input type="text" name="conceptsCovered" id="conceptsCovered" style="width:150px;">
+      </div>
+
+      <div class="journalDiv">
+        <label for="journalEntry">Journal Entry</label>
+        <textarea name="journalEntry" id="journalEntry" cols="30" rows="3" style="width:150px;"></textarea> 
+      </div>
+
+      <div class="moodDiv">
+        <label for="moodSelector">Mood</label>
+        <select id="moodOptions" style="width:150px;">
+          <option value="0">(Please Select)</option>
+          <option value="1">Happy</option>
+          <option value="2">Sad</option>
+          <option value="3">Accomplished</option>
+          <option value="4">Frustrated</option>
+          <option value="5">Driven</option>
+        </select>
+      </div>
+    
+    </fieldset>
+
+    <button type="button" name="recordButton" id="recordButton" style="width:150px;">Record Journal Entry</button>
+  </form>
+</body>
+
+</html>
