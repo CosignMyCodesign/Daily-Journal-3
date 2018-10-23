@@ -6,28 +6,28 @@ fieldset {
 .dateDiv {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid rgb(31, 50, 219);
   margin: 2px
 }
 
 .conceptsDiv {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid rgb(31, 50, 219);
   margin: 2px
 }
 
 .journalDiv {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid rgb(31, 50, 219);
   margin: 2px
 }
 
 .moodDiv {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid rgb(31, 50, 219);
   margin: 2px
 }
 

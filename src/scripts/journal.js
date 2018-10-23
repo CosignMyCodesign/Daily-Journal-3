@@ -34,8 +34,8 @@ const journalEntries = [
 const makeJournalEntryComponent = (journalEntry) => {
   return ` 
     <div id="journalEntry">
-      <h1>${journalEntry.concept}</h1>
-      <h2>${journalEntry.date}</h2>
+      <h2>${journalEntry.concept}</h2>
+      <h3>${journalEntry.date}</h3>
       <p>${journalEntry.entry}</p>
       <p>${journalEntry.mood}</p>
     </div>
