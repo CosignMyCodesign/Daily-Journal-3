@@ -1,34 +1,19 @@
-
 /*
-    Purpose: To create, and return, a string template that
-    represents a single journal entry object as HTML
+    Main application logic that uses the functions and objects
+    defined in the other JavaScript files.
 
-    Arguments: journalEntry (object)
+    Change the fake variable names below to what they should be
+    to get the data and display it.
 */
+API.getJournalEntries().then(renderJournalEntries)
 
-// This creates my HTML structure for a journal entry
-const makeJournalEntryComponent = (journalEntry) => {
-  return ` 
-    <div id="journalEntry">
-      <h2>${journalEntry.concept}</h2>
-      <h3>${journalEntry.date}</h3>
-      <p>${journalEntry.entry}</p>
-      <p>${journalEntry.mood}</p>
-    </div>
-  `
-}
 
-/*
-    Purpose: To render all journal entries to the DOM
-    Arguments: entries (array of objects)
-*/
+// CHALLENGE
+// Change the code in both src/scripts/entriesDOM.js and src/scripts/entryComponent.js so that the functions in each one becomes a method on an object, just like the code for API does above. Use Object.create.
 
-// This function iterates over and inserts my entries into the DOM
-const renderJournalEntries = (parsedEntries) => {
-  parsedEntries.forEach(entry => {
-    document.querySelector(".entryLog").innerHTML += makeJournalEntryComponent(entry)
-  })
-}
+// When you are done, there should be three objects defined in your application.
 
-// Invoke the render function
-// renderJournalEntries(parsedEntries)
+// 1. One object that has a method for API access
+// 2. One object that has a method for building a component
+// 3. One object that has a method rendering the components to the DOM
+// Refactor: Once the objects are defined, refactor your code to use the methods on those objects where needed.
